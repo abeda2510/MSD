@@ -1,0 +1,46 @@
+# Node
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+frontend/dist/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+
+# Mac, Linux, Windows
+*.swp
+
+# OneDrive temp files
+~$*
+
+# GitHub workflow artifact caches
+.cache/
+
+# Optional: local npm debug
+npm-debug.log*
+
+# JetBrains
+*.iml
+
+# Lockfiles handled by repo; ignore if you prefer to keep them
+# package-lock.json
+# yarn.lock
