@@ -27,7 +27,7 @@ const Menu = () => {
     const fetchMenuItems = async () => {
       try {
         setLoading(true);
-        const response = await fetch('http://localhost:5000/api/menu');
+        const response = await fetch("https://msd-backend-crhk.onrender.com");
         const data = await response.json();
         
         if (data.success) {
