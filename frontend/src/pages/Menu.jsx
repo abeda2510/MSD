@@ -27,7 +27,8 @@ const Menu = () => {
     const fetchMenuItems = async () => {
       try {
         setLoading(true);
-        const response = await fetch("https://msd-backend-crhk.onrender.com");
+        const API_URL = import.meta.env.VITE_API_URL || 'https://msd-backend-crhk.onrender.com/api';
+        const response = await fetch(`${API_URL}/menu`);
         const data = await response.json();
         
         if (data.success) {
