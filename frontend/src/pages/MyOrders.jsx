@@ -22,7 +22,7 @@ const MyOrders = () => {
         return;
       }
 
-      const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+      const API_URL = import.meta.env.VITE_API_URL || 'https://msd-backend-crhk.onrender.com/api';
       const response = await fetch(`${API_URL}/orders/my-orders`, {
         headers: {
           'Authorization': `Bearer ${token}`
